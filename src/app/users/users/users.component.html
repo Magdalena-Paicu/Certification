@@ -1,0 +1,7 @@
+<div>Users List</div>
+<div
+  *ngFor="let user of users; let i = index"
+  (click)="goToUserDetails(user.username, user.id)"
+>
+  {{ i + " . " }} {{ user.username }}
+</div>

@@ -8,6 +8,8 @@ import { UsersResolverService } from './users/users-resolver.service';
 import { UserDetailsComponent } from './users/user-details/user-details.component';
 import { canActivateChildGuard } from './guards/can-activate-child.guard';
 import { ProfileFormComponent } from './forms/profile-form/profile-form.component';
+import { ParentComponent } from './viewChild/parent/parent.component';
+import { ObservablesComponent } from './observables/observables.component';
 export const routes: Routes = [
   {
     path: 'crisis-list',
@@ -28,7 +30,7 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/profile-form',
+    redirectTo: '/observables',
     pathMatch: 'full',
   },
   {
@@ -47,5 +49,13 @@ export const routes: Routes = [
   {
     path: 'profile-form',
     component: ProfileFormComponent,
+  },
+  {
+    path: 'parent',
+    component: ParentComponent,
+  },
+  {
+    path: 'observables',
+    component: ObservablesComponent,
   },
 ];

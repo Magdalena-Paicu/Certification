@@ -8,4 +8,8 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   templateUrl: './crisis-center.component.html',
   styleUrl: './crisis-center.component.scss',
 })
-export class CrisisCenterComponent {}
+export class CrisisCenterComponent {
+  doSomethig() {
+    console.log('Miau! I am a child Component!');
+  }
+}
